@@ -12,6 +12,7 @@ body {
  padding: 2.5rem 0.25rem; 
  font-size: calc(1.5rem + 0.5vw);
  color: rgba(12, 12, 10, 0.8); 
+ font-weight: 600; 
 }
 
 .wrapper {
