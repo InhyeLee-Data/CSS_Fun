@@ -1,0 +1,94 @@
+/* by Inhye Lee */
+html {
+    font-family: 'futura-pt', helvetica, san-serif;
+}
+body {
+    margin:0; padding: 10px 100px;
+    background:  rgb(160, 160, 160,0.1);
+}
+.header {
+ display: flex;
+ justify-content: center;
+ padding: 2.5rem 0.25rem; 
+ font-size: calc(1.5rem + 0.5vw);
+ color: rgba(12, 12, 10, 0.8); 
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(50px, auto);
+  border:1px solid rgb(160, 160, 160, 0.5);
+  
+  background: #fff;
+}
+.brow_left, .brow_right, .eye_left, .eye_right, .nose_ver, .nose_hor, .mouth {
+   border:1px dotted rgb(160, 160, 160,0.3);
+}
+
+.brow_left, .brow_right{
+    grid-row: 3;
+    background:rgb(0,0,0, 0.5);
+    
+}
+.brow_left {
+    grid-column: 2/5;   
+    transform: rotate(30deg);  
+}
+
+.brow_right{
+    grid-column: 8/11;
+    transform: rotate(-30deg); 
+}
+.eye_left, .eye_right  {
+    grid-row: 5; 
+    background:rgb(0,0,0, 0.1);
+    display: flex;   
+    justify-content: center;
+    align-content: center;
+}
+.eye_left {
+    grid-column: 3;
+    
+}
+.eye_right {
+    grid-column: 9;
+}
+
+.nose_ver, .nose_hor {
+    background:rgb(0,0,0, 0.3) 
+}
+
+.nose_ver {
+    grid-column: 6;
+    grid-row: 5/7;
+    border-bottom:0;
+}
+.nose_hor {
+    grid-column: 5/8;
+    grid-row: 7;
+}
+
+.mouth {
+    grid-column: 5/8;
+    grid-row: 9/12;
+    border: 10px solid rgb(0, 0, 0,0.6);   
+    background:  rgb(0, 0, 0,0.03); 
+    /* border: 10px solid rgb(255, 0, 0,0.7);   
+    background:  rgb(255, 0, 0,0.3);  */
+}
+
+.jaw {
+    grid-row: 13;
+    grid-column:1/ 12;
+    border: none; /*it's a place holder*/
+}
+
+/*svg*/
+svg {
+    padding:0; margin:0;
+}
+.eye {
+    margin-top: 7.5px;
+}
